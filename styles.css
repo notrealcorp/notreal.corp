@@ -555,58 +555,6 @@ footer {
 .hero.inverted .btn-outline { color: var(--white); border-color: var(--white); }
 .hero.inverted .btn-outline::before { background: var(--white); color: var(--blue); }
 
-/* stat sliders strip inside hero */
-.hero-stats {
-  position: relative;
-  z-index: 2;
-  border-top: 2px solid var(--ink);
-  display: grid;
-  grid-template-columns: 1fr;
-}
-.hero.inverted .hero-stats { border-top-color: rgba(255,255,255,.3); }
-@media (min-width: 800px) {
-  .hero-stats { grid-template-columns: repeat(3, 1fr); }
-}
-.hero-stat {
-  padding: 22px var(--pad);
-  border-bottom: 1px solid var(--line);
-  border-right: 0;
-}
-@media (min-width: 800px) {
-  .hero-stat { border-bottom: none; border-right: 1px solid var(--line); }
-  .hero-stat:last-child { border-right: none; }
-}
-.hero.inverted .hero-stat { border-color: rgba(255,255,255,.22); }
-.hero-stat-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  font-family: var(--font-mono);
-  font-size: .7rem;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 10px;
-}
-.hero.inverted .hero-stat-top { color: var(--muted-on-blue); }
-.hero-stat-num { font-family: var(--font-head); font-weight: 700; color: var(--ink); }
-.hero.inverted .hero-stat-num { color: var(--white); }
-.hero-stat-track {
-  height: 6px;
-  background: var(--line);
-  position: relative;
-  overflow: hidden;
-}
-.hero.inverted .hero-stat-track { background: rgba(255,255,255,.2); }
-.hero-stat-fill {
-  position: absolute;
-  inset: 0 100% 0 0;
-  background: var(--blue);
-  transition: inset 1.1s var(--ease-snap);
-}
-.hero.inverted .hero-stat-fill { background: var(--white); }
-.hero-stat.in-view .hero-stat-fill { inset: 0 0 0 0; }
-
 /* =====================
    STEPS
    ===================== */
